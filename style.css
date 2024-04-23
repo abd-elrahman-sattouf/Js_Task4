@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Geologica", sans-serif;
+}
+
+h2{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: #222336;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+label{
+    position: absolute;
+    content: "";
+    top: -24px;
+    color: #ffffffc9;
+    font-size: 13px;
+}
+
+input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(116, 88, 36);
+    width: 190px;
+}
+
+input:focus{
+    border: 2px solid #a485ed;
+    background-color: wheat;
+}
+
+.inputs-fieldF,.inputs-fieldS,.inputs-fieldT, .input1{
+    position: relative;
+}
+
+.inputs-fieldS,.inputs-fieldT{
+    margin-top: 32px;
+}
+
+.inputs-fieldT,.input1{
+    display: none;
+}
+
+.forgotPass{
+    color: #ffffffc9;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 7px;
+    font-weight: bold;
+    position: relative;
+}
+
+.forgotPass:hover{
+    text-decoration: underline #a485ed ;
+}
+
+.buttField{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttField button{
+    width:230px;
+    padding: 7px 0;
+    margin-top: 7px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: #a485ed;
+    transition: 0.3s;
+}
+
+.buttField button:hover{
+color: white;
+}
+
+.buttField .forgotPass {
+    margin-left: auto;
+
+}
+
+
+.login-with{
+    font-size:13px;
+    color: #ffffffc9;
+    margin-top: 13px;
+    background-color: #222336;
+    position: relative;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+.login-with::before{
+    left: 4px;
+}
+
+.login-with::before,.login-with::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #ffffffc9;
+    top: 8px;
+}
+
+.SignupButt{
+    display: none;
+}
+
+.login-with::after {
+    right: 4px;
+}
+
+.card .icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 45px;
+}
+
+.social-icons{
+    filter: brightness(50%);
+transition: 0.3s;
+}
+
+.social-icons:hover {
+    filter: brightness(100%);
+}
+
+.lastP {
+    font-size: 12px;
+    color: #ffffffc9;
+    margin-top: 10px;
+}
+
+.lastP .sign-up{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffffc9;
+}
+
+.lastP .sign-up:hover{
+    text-decoration: underline #a485ed;
+}
+
+
+.login{
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffffc9;
+}
+
+.lastP .login:hover{
+    text-decoration: underline #a485ed;
+}
